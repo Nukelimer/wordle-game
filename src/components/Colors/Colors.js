@@ -6,22 +6,22 @@ function Colors() {
       style={{
         display: 'flex',
         flexDirection: 'column',
-        background: 'grey',
+        
         padding: '1.4em',
         color: 'whitesmoke',
         fontSize: '0.81rem',
       }}>
       <span
-        style={{ borderBottom: '1px solid whitesmoke', padding: '0.4em 0' }}>
+        style={{ border: '1px solid hsl(0deg 0% 10%)', padding: '0.4em',color:'hsl(0deg 0% 10%)' }}>
         Dark grey tiles means wrong Alphabet.
       </span>
       <span
-        style={{ borderBottom: '1px solid whitesmoke', padding: '0.4em 0' }}>
+        style={{border: '1px solid hsl(150deg 70% 30%)', padding: '0.4em ', color:'hsl(150deg 70% 30%)' }}>
         Dark green tiles means Perfect Alphabet.
       </span>
       <span
-        style={{ borderBottom: '1px solid whitesmoke', padding: '0.4em 0' }}>
-        Green tiles means right Alphabet but wrong position.
+        style={{ border: '1px solid hsl(50deg 100% 30%)', padding: '0.4em', color: 'hsl(50deg 100% 30%)'}}>
+        Brown tiles means right Alphabet but wrong position.
       </span>
     </div>
   );
