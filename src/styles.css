@@ -23,7 +23,7 @@ html {
 */
 body {
   font-family: monospace;
-  background: rgb(208, 206, 206);
+  background: rgb(248, 248, 248);
 }
 
 @media (max-height: 600px) {
