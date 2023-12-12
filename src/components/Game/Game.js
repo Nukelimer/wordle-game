@@ -6,6 +6,7 @@ import WordInput from '../WordInput/WordInput';
 import PreviousInputs from '../PreviousInput/PreviousInputs';
 import { ALLOWED_GUESSES } from '../PreviousInput/PreviousInputs';
 import GameOverBanner from '../GameOverBanner/GameOverBanner';
+import Colors from '../Colors/Colors';
 
 // Pick a random word on every pageload.
 const answer = sample(WORDS);
@@ -27,6 +28,7 @@ function Game() {
   };
   return (
     <>
+      <Colors/>
       <PreviousInputs temporaryInput={temporaryInput} answer={answer} />
       <WordInput handleSubmitGuess={handleSubmitGuess} gameState={gameState} />
       {gameState !== 'running' && <GameOverBanner gameState={gameState} answer={answer} numberOfGuesses={temporaryInput.length} />}
