@@ -30,7 +30,7 @@ const WordInput = ({ handleSubmitGuess, gameState }) => {
           ref={ref}
           // autoFocus
           disabled={gameState !== 'running'}
-          minLength={0}
+          minLength={5}
           maxLength={5}
           onChange={(event) => {
             setInputs(event.target.value.toUpperCase());
