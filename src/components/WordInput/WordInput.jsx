@@ -14,7 +14,7 @@ const WordInput = ({ handleSubmitGuess, gameState }) => {
         className="guess-input-wrapper"
         onSubmit={(event) => {
           event.preventDefault();
-          if (inputs.length < 5) {
+          if (inputs.length < 5 ) {
             return;
           }
 
@@ -29,7 +29,7 @@ const WordInput = ({ handleSubmitGuess, gameState }) => {
           required
           ref={ref}
           // autoFocus
-          disabled={gameState !== 'running'}
+          disabled={gameState !== 'running' || inputs.length === 5}
           minLength={5}
           maxLength={5}
           onChange={(event) => {
